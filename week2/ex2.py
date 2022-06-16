@@ -13,8 +13,16 @@ Update the new first IP address in the list to be '2.2.2.2'. Print out the new f
 ip_addresses = ["10.0.0.1", "10.0.1.2", "10.0.0.3", "172.16.0.1", "172.16.1.2"]
 
 ip_addresses.append("172.16.100.1")
-
+ip_addresses.extend(["172.16.200.1"])
+ip_addresses = ip_addresses + ["10.100.10.1", "10.200.20.2"]
 
 print(ip_addresses)
 print(f"{ip_addresses[0]}")
 print(f"{ip_addresses[-1]}")
+
+ip_addresses.pop(0)
+ip_addresses.pop(-1)
+
+ip_addresses.insert(0, "2.2.2.2")
+
+print(f"{ip_addresses[0]}")
