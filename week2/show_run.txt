@@ -1,0 +1,15 @@
+interface GigabitEthernet1/0/1
+description TEST_INTERFACE
+ip address 10.0.0.1 255.255.255.0
+speed auto
+duplex auto
+no shutdown
+
+interface GigabitEthernet1/0/2
+description TEST_INTERFACE
+ip address 10.0.0.2 255.255.255.0
+speed auto
+duplex auto
+no shutdown
+
+default-gateway 10.0.0.254
